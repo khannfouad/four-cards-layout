@@ -144,7 +144,14 @@ header p{
   border-top: 5px solid hsl(212, 86%, 64%);
 }
 
-@media (min-width: 700px) and (max-width: 1094px){
+@media (min-width: 700px) and (max-width: 894px){
+  
+  .contianer{
+    display: grid;
+    height: 100vh;
+    place-content: center;
+  }
+
   .cards-flow {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -170,9 +177,9 @@ header p{
     grid-area: two;
   }
 
+
   .calculator
   {
-    padding-top: 1.7em;
     grid-area: four;
   }
 
@@ -181,7 +188,7 @@ header p{
 
 
 
- @media screen and (min-width: 1095px) {
+ @media screen and (min-width: 895px) {
 
   header .heading{
     font-size: 1.4rem;
