@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+body{
+    /* General Styling */
+    font-family: "Poppins", sans-serif ;
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+    background-color: hsl(0, 0%, 98%);
+    /* Sizing*/
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+h2,h3{
+  color:hsl(234, 12%, 34%);
+}
+
+header {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+header .heading{
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.heading span{
+  font-weight: 400;
+}
+
+header p{
+  text-align: center;
+}
+
+.container{
+  padding: 2em 2em 0 2em;
+  max-width: 1200px;
+}
+
+.container > * {
+    margin-bottom: 3em;
+}
+
+/* .cards-flow > div:nth-child(1) {
+    margin-bottom: 2em;
+
+}
+
+.cards-flow > * + * {
+    margin-bottom: 2em;
+} */
+
+
+.cards-flow{
+  display: grid;
+  grid-gap: 2em;
+}
+
+.card-style{
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+
+  /* Shadow */
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card-style h3{
+  font-size: 1.25rem;
+  margin-bottom: 0.3em;
+  font-weight: 600;
+}
+
+.img-icon{
+  padding: 2.1em 1em 0em 0em;
+  align-self: flex-end;
+}
+
+
+.supervisor{
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.team-builder{
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.karma{
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.calculator{
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+
+ @media screen and (min-width: 800px) {
+
+  header .heading{
+    font-size: 1.4rem;
+  }
+
+  header .heading h2 {
+    margin-bottom: 0;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .cards-flow{
+    display: flex;
+    align-items: center;
+  }
+
+  .mid-col{
+    display: grid;
+    grid-gap: 2em;
+    flex: 1.2;
+  }
+
+  .supervisor{
+    padding: 2em;
+    flex: 1;
+  }
+
+  .calculator{
+    flex: 1;
+  }
+}
