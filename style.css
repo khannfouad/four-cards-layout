@@ -69,14 +69,12 @@ header {
 }
 
 header .heading{
-  font-size: 1rem;
   text-align: center;
   margin-bottom: 1em;
 }
 
 .heading span{
   font-weight: 400;
-  font-size: 0.85rem;
 }
 
 header p{
@@ -174,6 +172,7 @@ header p{
 
   .calculator
   {
+    padding-top: 1.7em;
     grid-area: four;
   }
 
